@@ -1,8 +1,10 @@
 # Dice apps based on real random data #
 
-The app randomly chooses a number from 1 to six, i.e. it is a dice app.
+The app shows random dice numbers (values from 1 to 6).
 The random numbers are fetched from the Web-API [ANU QRNG](https://qrng.anu.edu.au/contact/api-documentation/),
 which generates real random numbers.
+
+<br>
 
 ----
 
