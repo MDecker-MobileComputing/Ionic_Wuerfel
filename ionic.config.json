@@ -1,0 +1,7 @@
+{
+  "name": "WuerfelApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
