@@ -8,6 +8,13 @@
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
-  <ion-button color="primary" expand="block" (click)="onNeueZahlButton()" >Neue Zahl</ion-button>
+  <ion-button color="primary" expand="block" (click)="onNeueZahlButton()" >Neue Zahl würfeln</ion-button>
+
+  &nbsp;
+
+  <!-- siehe auch https://ionicframework.com/docs/v3/api/components/img/Img/ -->
+  <ion-img style="width:50%; height:50%; margin-left: auto; margin-right: auto;" [src]="wuerfelBildSource"></ion-img>
+
+  &nbsp;
 
 </ion-content>

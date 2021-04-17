@@ -17,6 +17,9 @@ export class HomePage {
   /** Konfigurations-Objekt für HttpClient. */
   readonly OPTIONS_OBJECT: object = { observe: "response" };
 
+  /** Wert für "src"-Attribut für `ion-img`-Element, mit dem aktuelle Zufallszahl dargestellt wird. */
+  private wuerfelBildSource = "./assets/wuerfel_1.png";
+
 
   /**
    * Konstruktor für *Dependency Injection*.
@@ -36,7 +39,7 @@ export class HomePage {
   /**
    * Event-Handler für erfolgreichen HTTP-Request.
    * Holt Zufallszahl aus JSON-String in der HTTP-Response und wandelt diese in eine Würfelzahl
-   * von 1..6 um.
+   * von 1..6 um. Die entsprechende Würfelzahl wird als Bild angezeigt.
    *
    * Beispiel für Response:
    * ```
@@ -63,6 +66,8 @@ export class HomePage {
 
     const wuerfelzahl = ( zufallszahl % 6 ) + 1;
     console.log(`wuerfelzahl=${wuerfelzahl}`);
+
+    this.wuerfelBildSource = `./assets/wuerfel_${wuerfelzahl}.png`
   }
 
   /**
