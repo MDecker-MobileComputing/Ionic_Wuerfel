@@ -20,6 +20,9 @@ export class HomePage {
   /** Wert für "src"-Attribut für `ion-img`-Element, mit dem aktuelle Zufallszahl dargestellt wird. */
   private wuerfelBildSource = "./assets/wuerfel_1.png";
 
+  /** Würfel wird nur dann angezeigt, wenn diese Variable den Wert `true` hat. */
+  private wuerfelSichtbar = false;
+
 
   /**
    * Konstruktor für *Dependency Injection*.
@@ -67,7 +70,8 @@ export class HomePage {
     const wuerfelzahl = ( zufallszahl % 6 ) + 1;
     console.log(`wuerfelzahl=${wuerfelzahl}`);
 
-    this.wuerfelBildSource = `./assets/wuerfel_${wuerfelzahl}.png`
+    this.wuerfelBildSource = `./assets/wuerfel_${wuerfelzahl}.png`;
+    this.wuerfelSichtbar = true;
   }
 
   /**
