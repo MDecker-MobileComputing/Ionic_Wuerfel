@@ -1,5 +1,5 @@
 {
-  "appId": "de.mide.ionic.wuerfelapp",
+  "appId": "io.ionic.starter",
   "appName": "WuerfelApp",
   "bundledWebRuntime": false,
   "npmClient": "npm",
