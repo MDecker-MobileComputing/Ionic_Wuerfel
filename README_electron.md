@@ -1,4 +1,16 @@
-# Electron-Apps erstellen #
+# Würfel-App als Electron-App für Desktop-Betriebssysteme erstellen ##
+
+## Änderungen ##
+
+Folgende Änderungen an der App waren erforderlich, um die App auch als Electron-App zu erstellen:
+* Umlauf aus Anzeigename der App entfernt ("Wuerfel" statt "Würfel"), siehe Attribut `appName` in Datei 
+  [capacitor.config.json](./capacitor.config.json) festgelegter Anzeigename der App.
+* In Datei [index.html](src/index.html) im Ordner `src` musste der Wert des `href`-Attributs des `<base>`-Tags um einen Punkt vor dem Slash ergänzt werden.
+* In der Datei mit den CSS-Regeln für die einzige Seite der App (Datei [home.page.scss](src/app/home/home.page.scss)) wurden die Regeln für den Selektor `ion-img` so angepasst, dass die Würfel-Grafik in ihrer nativen Größe angezeigt wird (also nicht vergrößert oder verkleinert wird).
+
+<br>
+
+## Electron-Apps erstellen ##
 
 Vorbereitung:
 ```
