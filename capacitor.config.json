@@ -1,6 +1,6 @@
 {
   "appId": "de.mide.ionic.wuerfelapp",
-  "appName": "WürfelApp",
+  "appName": "Würfel-App",
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
