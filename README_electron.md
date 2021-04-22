@@ -11,7 +11,13 @@ Für jede Zielplattform wird ein Unterordner im Ordner `release-builds` angelegt
 
 <br>
 
-Die Linux-App ist über `./WuerfelApp &` im Ordner `WuerfelApp-linux-x64` zu starten.
+Wenn unter Ubuntu der Befehl `npm run electron:win` ausgeführt werden soll, dann muss [Wine](https://www.winehq.org/) installiert sein:
+* Überprüfen, ob es installiert ist: `wine --version`
+* Installieren: `sudo apt install wine64`
+
+<br>
+
+Die Linux-App ist über folgenden Befehl im Ordner `WuerfelApp-linux-x64` zu starten: `./WuerfelApp &`
 
 <br>
 
@@ -19,6 +25,7 @@ Die Linux-App ist über `./WuerfelApp &` im Ordner `WuerfelApp-linux-x64` zu sta
 
 ## Referenzen ##
 
-* Ionic-App mit Electron für Windows und MacOS bauen: https://devdactic.com/ionic-desktop-electron/
-* Electron-App (nicht Ionic-spezifisch!) für Windows, MacOS und Linux bauen: https://www.christianengvall.se/electron-packager-tutorial/
+* Ionic-App mit Electron für Windows und MacOS erstellen: https://devdactic.com/ionic-desktop-electron/
+* Electron-App (nicht Ionic-spezifisch!) für Windows, MacOS und Linux erstellen: https://www.christianengvall.se/electron-packager-tutorial/
 
+<br>
