@@ -1,23 +1,55 @@
 # Electron-Apps erstellen #
 
-Würfel-App als Electron-App für verschiedene Desktop-Betriebssysteme (Zielplattformen) erstellen:
+Vorbereitung:
 ```
+npm install 
+npm install ngx-electron electron
+ionic build 
+npx cap add electron
+```
+
+Vorschau der Electron-App: 
+```
+npx cap open electron
+```
+
+Nach Änderung im Quellcode:
+```
+ionic capacitor copy
+```
+
+Dann Würfel-App als Electron-App für verschiedene Desktop-Betriebssysteme (Zielplattformen) mit einem der folgenden Befehle erstellen:
+```
+npm run electron:win
 npm run electron:mac
 npm run electron:linux
-npm run electron:win
 ```
 Siehe Definition der entsprechenden Befehle in [package.json](package.json) unter `scripts`.
 Für jede Zielplattform wird ein Unterordner im Ordner `release-builds` angelegt.
 
 <br>
 
+
+<br>
+
+Die Linux-App ist über folgenden Befehl im Ordner `WuerfelApp-linux-x64` zu starten: `./WuerfelApp &`
+
+<br>
+
+----
+
+## Cross-Platform-Compilation ##
+
+Die App konnte unter Windows für Linux erstellt werden.
+
+**App für Windows unter Ubuntu-Linux erstellen:**
 Wenn unter Ubuntu der Befehl `npm run electron:win` ausgeführt werden soll, dann muss [Wine](https://www.winehq.org/) installiert sein:
 * Überprüfen, ob es installiert ist: `wine --version`
 * Installieren: `sudo apt install wine64`
 
 <br>
 
-Die Linux-App ist über folgenden Befehl im Ordner `WuerfelApp-linux-x64` zu starten: `./WuerfelApp &`
+Die App konnte unter Linux auch für MacOS erstellt werden, aber nicht unter Windows für MacOS.
 
 <br>
 

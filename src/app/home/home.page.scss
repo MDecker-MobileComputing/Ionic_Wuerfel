@@ -26,9 +26,12 @@
   text-decoration: none;
 }
 
+
+// margin-left und margin-right auf "auto" gesetzt, damit das Bild zentriert wird
 ion-img {
-  width:50%;
-  height:50%;
+  width: 210px;
+  height: 210px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 3em;
 }
