@@ -29,9 +29,6 @@ Für jede Zielplattform wird ein Unterordner im Ordner `release-builds` angelegt
 
 <br>
 
-
-<br>
-
 Die Linux-App ist über folgenden Befehl im Ordner `WuerfelApp-linux-x64` zu starten: `./WuerfelApp &`
 
 <br>
