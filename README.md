@@ -11,7 +11,7 @@ which generates real random numbers.
 ## Build as Electron app ##
 
 Since the project is using [Capacitor](https://capacitorjs.com/) you can also build it as [Electron app](https://www.electronjs.org/).
-For This, checkout [branch `electron`](https://github.com/MDecker-MobileComputing/Ionic_Wuerfel/tree/electron) of this repository and read the instructions in file `README_electron.md`.
+For This, checkout [branch `electron`](https://github.com/MDecker-MobileComputing/Ionic_Wuerfel/tree/electron) of this repository and read the instructions in file [README_electron.md](https://github.com/MDecker-MobileComputing/Ionic_Wuerfel/blob/electron/README_electron.md).
 
 <br>
 
