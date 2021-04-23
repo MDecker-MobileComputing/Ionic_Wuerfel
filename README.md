@@ -31,4 +31,4 @@ See the [LICENSE file](LICENSE.md) for license rights and limitations (BSD 3-Cla
 
 The author of this app is not related to *ANU QRNG*.
 
-Illustration of dices used to display the random number cut out from [this image on *pixabay.com*](https://pixabay.com/de/illustrations/spiel-w%C3%BCrfel-dominospiel-1905965/) by [user peterolah0](https://pixabay.com/de/users/peterolah0-904688/). See [this Gist](https://gist.github.com/MDecker-MobileComputing/6ac576c3a512d2d462920b8e182beaa6) for the Bash script used to cut out the individual dices with ImageMagick.
+Illustration of dices used to display the random number cut out from [this image on *pixabay.com*](https://pixabay.com/de/illustrations/spiel-w%C3%BCrfel-dominospiel-1905965/) by [user peterolah0](https://pixabay.com/de/users/peterolah0-904688/). See [this Gist](https://gist.github.com/MDecker-MobileComputing/6ac576c3a512d2d462920b8e182beaa6) for the Bash script that was used to cut out the individual dices with ImageMagick.
