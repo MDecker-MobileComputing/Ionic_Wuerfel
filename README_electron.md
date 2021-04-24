@@ -3,7 +3,7 @@
 ## Änderungen ##
 
 Folgende Änderungen an der App waren erforderlich, um die App auch als Electron-App zu erstellen:
-* Umlauf aus Anzeigename der App entfernt ("Wuerfel" statt "Würfel"), siehe Attribut `appName` in Datei 
+* Umlauf aus Anzeigename der App entfernt ("Wuerfel" statt "Würfel"), siehe Attribut `appName` in Datei
   [capacitor.config.json](./capacitor.config.json) festgelegter Anzeigename der App.
 * In Datei [index.html](src/index.html) im Ordner `src` musste der Wert des `href`-Attributs des `<base>`-Tags um einen Punkt vor dem Slash ergänzt werden.
 * In der Datei mit den CSS-Regeln für die einzige Seite der App (Datei [home.page.scss](src/app/home/home.page.scss)) wurden die Regeln für den Selektor `ion-img` so angepasst, dass die Würfel-Grafik in ihrer nativen Größe angezeigt wird (also nicht vergrößert oder verkleinert wird).
@@ -14,13 +14,13 @@ Folgende Änderungen an der App waren erforderlich, um die App auch als Electron
 
 Vorbereitung:
 ```
-npm install 
+npm install
 npm install ngx-electron electron
-ionic build 
+ionic build
 npx cap add electron
 ```
 
-Vorschau der Electron-App: 
+Vorschau der Electron-App:
 ```
 npx cap open electron
 ```
@@ -61,6 +61,11 @@ Wenn unter Ubuntu der Befehl `npm run electron:win` ausgeführt werden soll, dan
 <br>
 
 Die App konnte unter Linux auch für MacOS erstellt werden, aber nicht unter Windows für MacOS.
+
+<br>
+
+Um unter MacOS die Windows-App zu erstellen wird (wie unter Linux) *wine* benötigt, welches u.a. als
+[brew](https://brew.sh/)-Paket installiert werden kann, siehe [hier](https://wiki.winehq.org/MacOS).
 
 <br>
 
