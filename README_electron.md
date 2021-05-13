@@ -7,7 +7,13 @@ npm run electron:linux
 npm run electron:win
 ```
 Siehe Definition der entsprechenden Befehle in [package.json](package.json) unter `scripts`.
-Für jede Zielplattform wird ein Unterordner im Ordner `release-builds` angelegt.
+Für jede Zielplattform wird ein Unterordner im Ordner `release-builds` angelegt:
+```
+release-builds/WuerfelApp-win32-ia32
+release-builds/WuerfelApp-darwin-x64
+release-builds/WuerfelApp-linux-x64
+```
+Der Ordner mit `darwin` im Namen ist für MacOS.
 
 <br>
 
