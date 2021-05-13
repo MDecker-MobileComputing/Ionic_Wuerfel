@@ -29,6 +29,41 @@ Die Linux-App ist über folgenden Befehl im Ordner `WuerfelApp-linux-x64` zu sta
 
 ----
 
+## Ionic-Projekt für Electron vorbereiten ##
+
+Dem Ionic-Projekt müssen zunächst einige Pakete hinzugefügt werden:
+```
+npm install ngx-electron electron
+npm install electron-packager --save-dev
+```
+
+<br>
+
+In der Datei [src/index.html](src/index.html) muss der `<base>`-Tag wie folgt geändert werden:
+```
+<base href="./" />
+```
+
+<br>
+
+Dann muss der Befehl `ionic build` ausgeführt werden.
+
+<br>
+
+Dem Ionic-Projekt kann dann dann Electron als Zielplattform hinzugefügt:
+```
+npx cap add electron
+```
+
+Die App kann dann gestartet werden:
+```
+npx cap open electron
+```
+
+<br>
+
+----
+
 ## Referenzen ##
 
 * Ionic-App mit Electron für Windows und MacOS erstellen: https://devdactic.com/ionic-desktop-electron/
