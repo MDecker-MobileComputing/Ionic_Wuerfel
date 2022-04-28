@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package de.mide.ionic.wuerfelapp;
 
 import android.os.Bundle;
 
