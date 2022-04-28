@@ -18,10 +18,10 @@ export class HomePage {
   readonly OPTIONS_OBJECT: object = { observe: "response" };
 
   /** Wert für "src"-Attribut für `ion-img`-Element, mit dem aktuelle Zufallszahl dargestellt wird. */
-  private wuerfelBildSource = "./assets/wuerfel_1.png";
+  public wuerfelBildSource = "./assets/wuerfel_1.png";
 
   /** Würfel wird nur dann angezeigt, wenn diese Variable den Wert `true` hat. */
-  private wuerfelSichtbar = false;
+  public wuerfelSichtbar = false;
 
 
   /**
@@ -33,7 +33,7 @@ export class HomePage {
   /**
    * Event-Handler für Button "Witz laden".
    */
-  private onNeueZahlButton() {
+  public onNeueZahlButton() {
 
       this.httpClient.get(this.URL_WEBAPI, this.OPTIONS_OBJECT)
                      .subscribe(this.verarbeiteHttpResponse, this.verarbeiteHttpFehler);
