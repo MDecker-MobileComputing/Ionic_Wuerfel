@@ -60,6 +60,7 @@ export class HomePage {
 
     const laenge = dataArray.length;
     if (laenge !== 1) {
+
       console.log(`FEHLER: Nicht genau ein Element im Array mit Zufallszahlen enthalten sondern ${laenge}.`);
       return;
     }

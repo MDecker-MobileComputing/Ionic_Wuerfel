@@ -1,19 +1,17 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Würfel mit echten Zufallszahlen
-    </ion-title>
+    <ion-title>Würfel mit echten Zufallszahlen</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
 
   <ion-button color="primary"
-              expand="block" 
-              (click)="onNeueZahlButton()" >Neue Zahl würfeln</ion-button>  
+              expand="block"
+              (click)="onNeueZahlButton()" >Neue Zahl würfeln</ion-button>
   &nbsp;
 
-  <div *ngIf="wuerfelSichtbar">    
+  <div *ngIf="wuerfelSichtbar">
     <ion-img [src]="wuerfelBildSource"></ion-img>
   </div>
 
