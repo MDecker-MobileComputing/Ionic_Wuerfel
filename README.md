@@ -1,5 +1,7 @@
 # Dice app based on real random data #
 
+<br>
+
 The Ionic app shows random dice numbers (values from 1 to 6).
 The random numbers are fetched from the Web-API [ANU QRNG](https://qrng.anu.edu.au/contact/api-documentation/),
 which generates real random numbers.
@@ -10,6 +12,8 @@ which generates real random numbers.
 
 ## Build as Electron app ##
 
+<br>
+
 Since the project is using [Capacitor](https://capacitorjs.com/) you can also build it as [Electron app](https://www.electronjs.org/):
  checkout [branch `electron`](https://github.com/MDecker-MobileComputing/Ionic_Wuerfel/tree/electron) of this repository and read the instructions in file [README_electron.md](https://github.com/MDecker-MobileComputing/Ionic_Wuerfel/blob/electron/README_electron.md).
 
@@ -19,6 +23,8 @@ Since the project is using [Capacitor](https://capacitorjs.com/) you can also bu
 
 ## Screenshots ##
 
+<br>
+
 ![Screenshot 1](screenshot_1.png)  ![Screenshot 2](screenshot_2.png)
 
 <br>
@@ -26,6 +32,8 @@ Since the project is using [Capacitor](https://capacitorjs.com/) you can also bu
 ----
 
 ## License ##
+
+<br>
 
 See the [LICENSE file](LICENSE.md) for license rights and limitations (BSD 3-Clause License) for the files in this repository.
 
