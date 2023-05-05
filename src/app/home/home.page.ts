@@ -38,7 +38,10 @@ export class HomePage {
   public onNeueZahlButton() {
 
       this.httpClient.get(this.URL_WEBAPI, this.OPTIONS_OBJECT)
-                     .subscribe(this.verarbeiteHttpResponse, this.verarbeiteHttpFehler);
+                     .subscribe({
+                        next: (antwort) => this.verarbeiteHttpResponse(antwort),
+                        error: (fehler) => this.verarbeiteHttpFehler(fehler)
+                      });
   }
 
   /**
