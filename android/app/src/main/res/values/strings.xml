@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">WuerfelApp</string>
+    <string name="title_activity_main">WuerfelApp</string>
+    <string name="package_name">de.mide.ionic.wuerfel</string>
+    <string name="custom_url_scheme">de.mide.ionic.wuerfel</string>
+</resources>
