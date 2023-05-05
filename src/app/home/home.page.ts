@@ -80,20 +80,17 @@ export class HomePage {
     this.wuerfelSichtbar = true;
   }
 
-  /**
-   * Event-Handler für fehlgeschlagenen HTTP-Request.
-   */
+
   private verarbeiteHttpFehler = (fehler: HttpErrorResponse) => {
+
+    this.zeigeDialog("Fehler bei Web-API-Zugriff um Zufallszahl zu holen.");
 
     const fehlerJson = JSON.stringify(fehler);
     console.log(`Fehler beim Zugriff auf Web-API (Status Code: ${fehlerJson})`);
-    this.zeigeDialog("Fehler bei Web-API-Zugriff um Zufallszahl zu holen.");
+    
     this.wuerfelSichtbar = false;
   }
 
-  /**
-   * Alert anzeigen, siehe auch https://ionicframework.com/docs/api/alert
-   */
   private async zeigeDialog(nachricht: string) {
 
       const meinAlert =
