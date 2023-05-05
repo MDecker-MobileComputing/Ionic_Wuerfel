@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { AlertController } from '@ionic/angular';
 
 /**
  * Page zum Abruf der einzelnen Würfelwerten.
@@ -27,11 +28,12 @@ export class HomePage {
   /**
    * Konstruktor für *Dependency Injection*.
    */
-  constructor( private httpClient: HttpClient ) {}
+  constructor( private httpClient: HttpClient,
+               private alertCtrl : AlertController ) {}
 
 
   /**
-   * Event-Handler für Button "Witz laden".
+   * Event-Handler für Button, der Web-API-Request auslöst.
    */
   public onNeueZahlButton() {
 
@@ -80,7 +82,25 @@ export class HomePage {
    */
   private verarbeiteHttpFehler = (fehler: HttpErrorResponse) => {
 
-    console.log(`Fehler beim Zugriff auf Web-API: ${fehler.message}`);
+    const fehlerJson = JSON.stringify(fehler);
+    console.log(`Fehler beim Zugriff auf Web-API (Status Code: ${fehlerJson})`);
+    this.zeigeDialog("Fehler bei Web-API-Zugriff um Zufallszahl zu holen.");
+    this.wuerfelSichtbar = false;
   }
+
+  /**
+   * Alert anzeigen, siehe auch https://ionicframework.com/docs/api/alert
+   */
+  private async zeigeDialog(nachricht: string) {
+
+      const meinAlert =
+      await this.alertCtrl.create({
+          header  : "Fehler",
+          message : nachricht,
+          buttons : [ "Ok" ]
+      });
+
+      await meinAlert.present();
+    }
 
 }
