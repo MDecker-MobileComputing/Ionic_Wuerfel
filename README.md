@@ -25,7 +25,7 @@ Since the project is using [Capacitor](https://capacitorjs.com/) you can also bu
 
 <br>
 
-![Screenshot 1](screenshot_1.png)  ![Screenshot 2](screenshot_2.png)
+![Screenshot 1](screenshot_1.png) &nbsp; ![Screenshot 2](screenshot_2.png)
 
 <br>
 
