@@ -44,6 +44,7 @@ export class HomePage {
                       });
   }
 
+
   /**
    * Event-Handler für erfolgreichen HTTP-Request.
    * Holt Zufallszahl aus JSON-String in der HTTP-Response und wandelt diese in eine Würfelzahl
@@ -81,6 +82,9 @@ export class HomePage {
   }
 
 
+  /**
+   * Event-Handler für erfolglosen HTTP-Request.
+   */
   private verarbeiteHttpFehler = (fehler: HttpErrorResponse) => {
 
     this.zeigeDialog("Fehler bei Web-API-Zugriff um Zufallszahl zu holen.");
@@ -91,6 +95,10 @@ export class HomePage {
     this.wuerfelSichtbar = false;
   }
 
+
+  /**
+   * Hilfsmethode zur Anzeige eines Dialogs. 
+   */
   private async zeigeDialog(nachricht: string) {
 
       const meinAlert =
