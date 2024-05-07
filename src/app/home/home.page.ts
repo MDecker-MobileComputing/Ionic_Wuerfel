@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { AlertController } from '@ionic/angular';
 
+
 /**
  * Page zum Abruf der einzelnen Würfelwerten.
  */
@@ -91,13 +92,13 @@ export class HomePage {
 
     const fehlerJson = JSON.stringify(fehler);
     console.log(`Fehler beim Zugriff auf Web-API (Status Code: ${fehlerJson})`);
-    
+
     this.wuerfelSichtbar = false;
   }
 
 
   /**
-   * Hilfsmethode zur Anzeige eines Dialogs. 
+   * Hilfsmethode zur Anzeige eines Dialogs.
    */
   private async zeigeDialog(nachricht: string) {
 
