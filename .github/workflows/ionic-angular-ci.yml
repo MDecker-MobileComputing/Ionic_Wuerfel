@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4 # neueste Version siehe https://github.com/actions/checkout/releases
 
     - name: Use Node.js 20.x
       uses: actions/setup-node@v4 # neueste Version siehe https://github.com/actions/setup-node/releases
