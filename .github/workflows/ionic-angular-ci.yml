@@ -27,7 +27,7 @@ jobs:
           ${{ runner.OS }}-
 
     - name: Abhängigkeiten installieren
-       run: npm clean-install # node_modules/ ggf. löschen
+      run: npm clean-install # node_modules/ ggf. löschen
 
     - name: Ionic-App bauen
       run: |
