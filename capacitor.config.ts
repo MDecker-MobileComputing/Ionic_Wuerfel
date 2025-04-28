@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'de.mide.ionic.wuerfelapp',
   appName: 'wuerfel',
   webDir: 'www'
 };
