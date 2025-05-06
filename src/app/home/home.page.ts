@@ -27,12 +27,12 @@ export class HomePage {
      * Konstruktor für *Dependency Injection*.
      */
     constructor( private httpClient: HttpClient,
-                private alertCtrl : AlertController ) {}
+                 private alertCtrl : AlertController ) {}
 
   /**
    * Event-Handler für Button, der Web-API-Request auslöst.
    */
-      public onNeueZahlButton() {
+    public onNeueZahlButton() {
 
         this.httpClient.get(this.URL_WEBAPI, this.OPTIONS_OBJECT)
                        .subscribe({
