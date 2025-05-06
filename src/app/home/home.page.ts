@@ -23,15 +23,17 @@ export class HomePage {
     /** Würfel wird nur dann angezeigt, wenn diese Variable den Wert `true` hat. */
     public wuerfelSichtbar = false;
 
+
     /**
      * Konstruktor für *Dependency Injection*.
      */
     constructor( private httpClient: HttpClient,
                  private alertCtrl : AlertController ) {}
 
-  /**
-   * Event-Handler für Button, der Web-API-Request auslöst.
-   */
+
+    /**
+     * Event-Handler für Button, der Web-API-Request auslöst.
+     */
     public onNeueZahlButton() {
 
         this.httpClient.get(this.URL_WEBAPI, this.OPTIONS_OBJECT)
@@ -62,7 +64,7 @@ export class HomePage {
       const dataArray = httpResponse.body.data;
 
       const laenge = dataArray.length;
-      if (laenge !== 1) {
+      if ( laenge !== 1 ) {
 
         console.log(`FEHLER: Nicht genau ein Element im Array mit Zufallszahlen enthalten sondern ${laenge}.`);
         return;
@@ -96,7 +98,7 @@ export class HomePage {
     /**
      * Hilfsmethode zur Anzeige eines Dialogs.
      */
-    private async zeigeDialog(nachricht: string) {
+    private async zeigeDialog( nachricht: string ) {
 
         const meinAlert =
         await this.alertCtrl.create({
