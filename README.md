@@ -1,21 +1,10 @@
-# Dice app based on real random data #
+# Ionic: Würfel-App mit echten Zufallszahlen #
 
 <br>
 
-The Ionic app shows random dice numbers (values from 1 to 6).
-The random numbers are fetched from the Web-API [ANU QRNG](https://qrng.anu.edu.au/contact/api-documentation/),
-which generates real random numbers.
-
-<br>
-
-----
-
-## Build as Electron app ##
-
-<br>
-
-Since the project is using [Capacitor](https://capacitorjs.com/) you can also build it as [Electron app](https://www.electronjs.org/):
- checkout [branch `electron`](https://github.com/MDecker-MobileComputing/Ionic_Wuerfel/tree/electron) of this repository and read the instructions in file [README_electron.md](https://github.com/MDecker-MobileComputing/Ionic_Wuerfel/blob/electron/README_electron.md).
+Die Ionic-App zeigt zufällige Würfelzahlen (Werte von 1 bis 6) an.  
+Die Zufallszahlen werden von der Web-API [ANU QRNG](https://qrng.anu.edu.au/contact/api-documentation/) abgerufen,  
+die echte Zufallszahlen generiert.
 
 <br>
 
