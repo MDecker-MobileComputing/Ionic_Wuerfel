@@ -101,11 +101,11 @@ export class HomePage {
     private async zeigeDialog( nachricht: string ) {
 
         const meinAlert =
-        await this.alertCtrl.create({
-            header  : "Fehler",
-            message : nachricht,
-            buttons : [ "Ok" ]
-        });
+                await this.alertCtrl.create({
+                    header  : "Fehler",
+                    message : nachricht,
+                    buttons : [ "Ok" ]
+                });
 
         await meinAlert.present();
       }
