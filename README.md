@@ -2,9 +2,7 @@
 
 <br>
 
-Die Ionic-App zeigt zufällige Würfelzahlen (Werte von 1 bis 6) an.  
-Die Zufallszahlen werden von der Web-API [ANU QRNG](https://qrng.anu.edu.au/contact/api-documentation/) abgerufen,  
-die echte Zufallszahlen generiert.
+Die Ionic-App zeigt zufällige Würfelzahlen (Werte von 1 bis 6) an. Hierfür werden echte Zufallszahlen von der Web-API [ANU QRNG](https://qrng.anu.edu.au/contact/api-documentation/) abgerufen.
 
 <br>
 
